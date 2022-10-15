@@ -40,7 +40,13 @@
   .table-content::-webkit-scrollbar-thumb:hover {
     background: #f3f4f8;
   }
-
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 8px;
+    border: 1px solid $grey-100;
+  }
   .search {
     margin: 8px 0 7px 16px;
     position: relative;
@@ -60,6 +66,17 @@
       position: absolute;
       right: 0;
       top: 10px;
+    }
+  }
+
+  .btns {
+    border: 1px solid $shade-black;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: $white;
+    margin-left: 15px;
+    .icon {
+      margin-left: 10px;
     }
   }
 }

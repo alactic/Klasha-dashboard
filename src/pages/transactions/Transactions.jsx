@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { SearchIcon } from '../../shared/icons';
+import { FilterIcon, SearchIcon } from '../../shared/icons';
 import "./Transactions.scss";
 
 const Payload = [
@@ -68,10 +68,14 @@ const TrasactionsHistory = () => {
     return (
        <div className="transactions-container">
            <div className="overview">Transaction history</div>
-           <div>
+           <div className="menu-items">
                <div className="search">
                    <span className="icon"><SearchIcon/></span>
                  <input className="search-input" placeholder="Search" />
+               </div>
+               <div>
+                   <button className="btns">Filter <span className="icon"><FilterIcon/></span></button>
+                   <button className="btns">Export</button>
                </div>
            </div>
            <div className="table-content">
