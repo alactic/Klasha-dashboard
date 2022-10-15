@@ -1,0 +1,54 @@
+@import "../../../assets/mixins.scss";
+@import "../../../assets/colors.scss";
+
+.topnav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+
+  .topnav-content {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 32px 0 94px;
+    background-color: $white;
+    border-bottom: 1px solid $light-gray;
+    .items {
+      display: flex;
+      align-items: center;
+    }
+    .dp-icon {
+      margin-right: 12px;
+    }
+
+    .lang {
+      margin-right: 10px;
+    }
+    .dp,
+    .en {
+      display: flex;
+      align-items: center;
+      margin-left: 22px;
+    }
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .topnav-content .logo {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .topnav-content .dp {
+    margin: 0 7px 0 8px;
+  }
+  .topnav-content {
+    padding: 0 12px 0 14px;
+  }
+}

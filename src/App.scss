@@ -1,0 +1,12 @@
+@import "./assets/colors.scss";
+
+.router-container {
+  margin: 64px 0 0 0;
+  min-height: 90vh;
+  background-color: $white;
+  width: 100%;
+  .content {
+    margin-left: 280px;
+    padding: 104px 32px 64px 32px;
+  }
+}
