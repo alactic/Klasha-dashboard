@@ -9,6 +9,19 @@
     padding: 16px 0 24px 16px;
     @include text(500, 20px, 32px, $shade-black);
   }
+  .table-content {
+    overflow: auto;
+  }
+  /* Handle */
+  .table-content::-webkit-scrollbar-thumb {
+    background: #f3f4f8;
+    border-radius: 5px;
+  }
+
+  /* Handle on hover */
+  .table-content::-webkit-scrollbar-thumb:hover {
+    background: #f3f4f8;
+  }
   #table {
     border-collapse: collapse;
     width: 100%;
@@ -29,26 +42,15 @@
     border-bottom: 1px solid $grey-100;
     @include text(400, 14px, 20px, $black-700);
   }
-
-  /* Handle */
-  .table-content::-webkit-scrollbar-thumb {
-    background: #f3f4f8;
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  .table-content::-webkit-scrollbar-thumb:hover {
-    background: #f3f4f8;
-  }
   .menu-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 8px;
     border: 1px solid $grey-100;
+    padding: 0 16px;
   }
   .search {
-    margin: 8px 0 7px 16px;
+    margin: 8px 0 10px 0;
     position: relative;
     width: 180px;
     height: 40px;
@@ -72,11 +74,54 @@
   .btns {
     border: 1px solid $shade-black;
     border-radius: 8px;
-    padding: 12px 20px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;
     background-color: $white;
     margin-left: 15px;
     .icon {
       margin-left: 10px;
     }
+  }
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .paginate-content {
+    border: 1px solid $grey-201;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 7.5px 0;
+    margin: 16px;
+  }
+  .page-no,
+  .active-page {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-arrow:first-child {
+    margin: 0 27px 0 19px;
+  }
+  .page-arrow:last-child {
+    margin: 0 19px 0 27px;
+  }
+  .page-arrow {
+    display: flex;
+    align-items: center;
+  }
+  .page-no {
+    @include text(600, 14px, 22px, $grey-300);
+  }
+  .active-page {
+    background: $grey-100;
+    border-radius: 20px;
+
+    @include text(600, 14px, 22px, $shade-black);
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FilterIcon, SearchIcon } from '../../shared/icons';
+import { FilterIcon, PageLeftIcon, PageRightIcon, SearchIcon } from '../../shared/icons';
 import "./Transactions.scss";
 
 const Payload = [
@@ -103,6 +103,19 @@ const TrasactionsHistory = () => {
                      </tr>))}
                    </tbody> 
                </table>
+           </div>
+           <div className="pagination">
+               <div className="paginate-content">
+               <span className="page-arrow"><PageLeftIcon/></span>
+               <span className="page-no">1</span>
+               <span className="page-no">2</span>
+               <span className="active-page">3</span>
+               <span className="page-no">...</span>
+               <span className="page-no">8</span>
+               <span className="page-no">9</span>
+               <span className="page-no">10</span>
+               <span className="page-arrow"><PageRightIcon/></span>
+               </div>
            </div>
        </div>
    )
