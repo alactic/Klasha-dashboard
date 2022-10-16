@@ -1,0 +1,45 @@
+@import "../../assets/mixins.scss";
+@import "../../assets/colors.scss";
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  .paginate-content {
+    border: 1px solid $grey-201;
+    border-radius: 5px;
+    display: inline-flex;
+    padding: 7.5px 0;
+    margin: 16px;
+  }
+  .page-no,
+  .active-page {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .page-arrow:first-child {
+    margin: 0 27px 0 19px;
+  }
+  .page-arrow:last-child {
+    margin: 0 19px 0 27px;
+  }
+  .page-arrow {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .page-no {
+    @include text(600, 14px, 22px, $grey-300);
+  }
+  .active-page {
+    background: $grey-100;
+    border-radius: 20px;
+
+    @include text(600, 14px, 22px, $shade-black);
+  }
+}

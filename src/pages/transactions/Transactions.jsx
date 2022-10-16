@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FilterIcon, PageLeftIcon, PageRightIcon, SearchIcon } from '../../shared/icons';
+import Pagination from '../../shared/pagination/Pagination';
 import "./Transactions.scss";
 
 const Payload = [
@@ -65,6 +66,8 @@ const Payload = [
      },
 ]
 const TrasactionsHistory = () => {
+    const [currentPage, setCurrentPage] = useState(1);
+
     return (
        <div className="transactions-container">
            <div className="overview">Transaction history</div>
@@ -104,20 +107,12 @@ const TrasactionsHistory = () => {
                    </tbody> 
                </table>
            </div>
-           <div className="pagination">
-               <div className="paginate-content">
-               <span className="page-arrow"><PageLeftIcon/></span>
-               <span className="page-no">1</span>
-               <span className="page-no">2</span>
-               <span className="active-page">3</span>
-               <span className="page-no">...</span>
-               <span className="page-no">8</span>
-               <span className="page-no">9</span>
-               <span className="page-no">10</span>
-               <span className="page-arrow"><PageRightIcon/></span>
-               </div>
-           </div>
-       </div>
+           <Pagination totalPages={10}
+                currentPage={currentPage}
+                changeCurrentPage={(e)=>setCurrentPage(e)}
+                nextBtn={<PageRightIcon/>}
+                previousBtn={<PageLeftIcon/>}/>
+        </div>
    )
 }
 
