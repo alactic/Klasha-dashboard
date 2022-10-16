@@ -134,7 +134,7 @@
       }
     }
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 912px) {
     .card-content {
       flex-wrap: wrap;
     }
@@ -156,9 +156,8 @@
         width: 65px;
         margin: 0 0 0 15px;
       }
-      .email,
       .report {
-        margin-top: 10px;
+        margin-top: 5px;
       }
     }
     .graph-content {
@@ -175,6 +174,12 @@
           margin: 25px 15px;
         }
       }
+    }
+  }
+  @media screen and (max-width: 300px) {
+    .active-card,
+    .card {
+      width: 100%;
     }
   }
 }

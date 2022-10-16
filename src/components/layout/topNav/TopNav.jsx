@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./TopNav.scss";
-import { ArrowDownIcon, DPIcon, ToggleIcon } from "../../../shared/icons";
+import ArrowDownIcon from "../../../shared/icons/arrowDown"
+import DPIcon from "../../../shared/icons/dp"
+import ToggleIcon from "../../../shared/icons/toggle-icon"
 
 const TopNav = ({ setSideBarToggle, sidebarToggle }) => {
   return (

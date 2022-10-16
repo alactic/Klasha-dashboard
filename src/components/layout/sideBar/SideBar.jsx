@@ -15,9 +15,9 @@ const SideBar = ({ sidebarToggle }) => {
       <div>
        <LogoIcon/>
        <div className="sub-menu">Main pages</div>
-       <div className="menu"><span className="icon"><DashboardIcon active={location.pathname === "/"}/> </span> <NavLink to="/" className="menu-item" activeClassName="active" end>Dashboard</NavLink></div>
+       <div className="menu"><span className="icon"><DashboardIcon active={location?.pathname === "/"}/> </span> <NavLink to="/" className="menu-item" activeclassname="active" end>Dashboard</NavLink></div>
        <div className="menu"><span className="icon"><BalanceIcon/> </span>Balances</div>
-       <div className="menu"><span className="icon"><TransactionIcon active={location.pathname.includes("/transaction")}/> </span><NavLink to="/transaction" exact className="menu-item" activeClassName="active">Transactions</NavLink></div>
+       <div className="menu"><span className="icon"><TransactionIcon active={location?.pathname.includes("/transaction")}/> </span><NavLink to="/transaction" exact="true" className="menu-item" activeclassname="active">Transactions</NavLink></div>
        <div className="menu"><span className="icon"><AnalyticsIcon/> </span>Analytics</div>
        <div className="menu"><span className="icon"><MarketingIcon/> </span>Marketing</div>
        <div className="menu"><span className="icon"><ExchangeIcon/> </span>Exchange rates</div>

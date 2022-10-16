@@ -103,4 +103,14 @@
       }
     }
   }
+
+  @media screen and (max-width: 300px) {
+    .search {
+      width: 110px;
+    }
+
+    .btns {
+      padding: 0 5px;
+    }
+  }
 }

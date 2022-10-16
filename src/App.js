@@ -13,7 +13,7 @@ function App() {
   const [sidebarToggle, setSideBarToggle] = useState(false);
   return (
     <div>
-            <Router>
+      <Router>
        <TopNav setSideBarToggle={setSideBarToggle} sidebarToggle={sidebarToggle}/>
        <SideBar sidebarToggle={sidebarToggle}/>
        <div className="router-container">

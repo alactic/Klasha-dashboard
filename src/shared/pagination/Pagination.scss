@@ -39,7 +39,6 @@
   .active-page {
     background: $grey-100;
     border-radius: 20px;
-
     @include text(600, 14px, 22px, $shade-black);
   }
 
@@ -54,6 +53,19 @@
       width: 25px;
       height: 25px;
       margin: 0 6px;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    justify-content: center;
+    .page-arrow:last-child,
+    .page-arrow:first-child {
+      margin: 0 6px 0 6px;
+    }
+    .page-no,
+    .active-page {
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
     }
   }
 }
