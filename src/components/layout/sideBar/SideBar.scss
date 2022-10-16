@@ -23,13 +23,21 @@
     margin-top: 34px;
   }
   .menu {
-    @include text(400, 16px, 24px, $shade-black);
     margin-top: 16px;
     display: flex;
     align-items: center;
+    a {
+      text-decoration: none;
+    }
     .icon {
       margin: 0 11px -8px 0;
     }
+  }
+  .menu-item {
+    @include text(400, 16px, 24px, $shade-black);
+  }
+  .active {
+    color: $pink-500;
   }
   .support {
     padding-left: 8px;
