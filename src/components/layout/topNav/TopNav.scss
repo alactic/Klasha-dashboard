@@ -2,18 +2,18 @@
 @import "../../../assets/colors.scss";
 
 .topnav-container {
-  width: 100%;
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   z-index: 1000;
+  width: 100%;
 
   .topnav-content {
     height: 64px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 32px 0 94px;
+    width: 100%;
     background-color: $white;
     border-bottom: 1px solid $light-gray;
     .items {
@@ -33,22 +33,23 @@
       align-items: center;
       margin-left: 22px;
     }
+    .en {
+      margin-right: 38px;
+    }
   }
-  .logo {
+  .toggle {
     display: none;
   }
-}
-
-@media screen and (max-width: 767px) {
-  .topnav-content .logo {
-    display: block;
-    margin-right: 10px;
-  }
-
-  .topnav-content .dp {
-    margin: 0 7px 0 8px;
-  }
-  .topnav-content {
-    padding: 0 12px 0 14px;
+  @media screen and (max-width: 767px) {
+    left: 0;
+    .topnav-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .toggle {
+        display: block;
+        margin-left: 32px;
+      }
+    }
   }
 }

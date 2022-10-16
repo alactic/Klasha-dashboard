@@ -1,0 +1,48 @@
+@import "../../../assets/colors.scss";
+
+.chart-container {
+  padding: 24px 17px 24px 14px;
+  border: 1px solid $shade-black;
+  border-radius: 8px;
+  margin-right: 24px;
+  height: 284px;
+
+  .canvasjs-chart-credit {
+    display: none;
+  }
+}
+
+.chart-container {
+  scrollbar-width: thin;
+  scrollbar-color: $grey-201 $grey-201;
+}
+/* width */
+.chart-container::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+.chart-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px $grey-201;
+  border-radius: 5px;
+}
+
+/* Handle */
+.chart-container::-webkit-scrollbar-thumb {
+  background: $grey-201;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.chart-container::-webkit-scrollbar-thumb:hover {
+  background: $grey-201;
+}
+
+@media screen and (max-width: 767px) {
+  .chart-container {
+    padding: 24px 7px 24px 4px;
+    margin: 0 0 18px 0;
+    height: 284px;
+  }
+}

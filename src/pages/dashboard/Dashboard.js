@@ -1,4 +1,5 @@
 import React from 'react';
+import Chart from '../../components/dashboard/chart/Chart';
 import { ArrowDownIcon, DownloadIcon, LastMonthChartIcon, MonthChartIcon, WeekChartIcon } from '../../shared/icons';
 import './Dashboard.scss';
 
@@ -49,7 +50,9 @@ const Dashboard = () =>{
                <span className="report"><span className="icon"><DownloadIcon/></span>Download report</span>
             </div>
             <div className="graph-content">
-                 <div className="graph">&nbsp;</div>
+                 <div className="graph">
+                    <Chart/>
+                 </div>
                  <div className="desc-send">
                     <div className="desc">KlashaWire - send money to businesses globally from Africa</div>
                     <button className="send">Send a Wire</button>

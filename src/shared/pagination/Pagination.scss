@@ -42,4 +42,18 @@
 
     @include text(600, 14px, 22px, $shade-black);
   }
+
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+    .page-arrow:last-child,
+    .page-arrow:first-child {
+      margin: 0 10px 0 10px;
+    }
+    .page-no,
+    .active-page {
+      width: 25px;
+      height: 25px;
+      margin: 0 6px;
+    }
+  }
 }

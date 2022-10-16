@@ -11,7 +11,7 @@
   }
   .active-card,
   .card {
-    padding: 25px 27px 24px 24px;
+    padding: 25px 27px 34px 24px;
     border: 1px solid $black;
     border-radius: 8px;
     width: 25%;
@@ -134,14 +134,47 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 767px) {
-  .dashboard-container {
-    margin: 76px 0 0 0;
-  }
-  .dashboard-container .dashboard-content {
-    margin-right: 0;
-    padding: 20px 20px;
+  @media screen and (max-width: 767px) {
+    .card-content {
+      flex-wrap: wrap;
+    }
+    .active-card,
+    .card {
+      padding: 15px 17px 14px 14px;
+      width: 40%;
+      margin: 12px 0 0 0;
+    }
+    .sales-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .seven-days {
+        margin: 0 10px 0 8px;
+      }
+      .currency {
+        width: 65px;
+        margin: 0 0 0 15px;
+      }
+      .email,
+      .report {
+        margin-top: 10px;
+      }
+    }
+    .graph-content {
+      display: flex;
+      flex-direction: column;
+      .graph {
+        width: 100%;
+      }
+      .desc-send {
+        padding: 0;
+        width: 100%;
+        .send,
+        .desc {
+          margin: 25px 15px;
+        }
+      }
+    }
   }
 }

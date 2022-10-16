@@ -6,12 +6,10 @@ import "./SideBar.scss";
 import { BalanceIcon, DashboardIcon, LogoIcon, PaymentIcon, TransactionIcon, WireIcon, CheckoutIcon, MarketingIcon, AnalyticsIcon, ExchangeIcon, SupportIcon, ArrowLeftIcon } from "../../../shared/icons";
 
 const SideBar = ({ sidebarToggle }) => {
-  const [active, setActive] = useState(1);
   const location = useLocation()
-console.log({history})
   return (
     <div
-      className={`sidebar-container ${!sidebarToggle && "hide-sidebar-mobile"}`}
+      className={`sidebar-container ${sidebarToggle && "hide-sidebar-mobile"}`}
     > 
     <div className="sidebar-content">   
       <div>

@@ -17,7 +17,7 @@ function App() {
        <TopNav setSideBarToggle={setSideBarToggle} sidebarToggle={sidebarToggle}/>
        <SideBar sidebarToggle={sidebarToggle}/>
        <div className="router-container">
-          <div className="content">
+          <div className="content" onClick={()=>setSideBarToggle(true)}>
             <Routes>
             <Route
                 path="/"

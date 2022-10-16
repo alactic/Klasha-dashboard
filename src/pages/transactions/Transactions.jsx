@@ -77,7 +77,7 @@ const TrasactionsHistory = () => {
                  <input className="search-input" placeholder="Search" />
                </div>
                <div>
-                   <button className="btns">Filter <span className="icon"><FilterIcon/></span></button>
+                   <button className="btns"><span className="filter">Filter</span> <span className="icon"><FilterIcon/></span></button>
                    <button className="btns">Export</button>
                </div>
            </div>
