@@ -176,6 +176,12 @@
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    .active-card,
+    .card {
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 300px) {
     .active-card,
     .card {

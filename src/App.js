@@ -10,7 +10,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import TransactionHistory from './pages/transactions/Transactions';
 
 function App() {
-  const [sidebarToggle, setSideBarToggle] = useState(false);
+  const [sidebarToggle, setSideBarToggle] = useState(true);
   return (
       <Router>
        <TopNav setSideBarToggle={setSideBarToggle} sidebarToggle={sidebarToggle}/>
