@@ -7,7 +7,7 @@ import ToggleIcon from "../../../shared/icons/toggle-icon"
 
 const TopNav = ({ setSideBarToggle, sidebarToggle }) => {
   return (
-    <div className="topnav-container">
+    <header className="topnav-container">
       <div className="topnav-content">
         <div className="toggle" onClick={()=>setSideBarToggle(!sidebarToggle)}>
           <ToggleIcon/>
@@ -23,7 +23,7 @@ const TopNav = ({ setSideBarToggle, sidebarToggle }) => {
           </div>
         </div>
       </div>
-    </div>
+    </header>
   );
 };
 TopNav.propTypes = {

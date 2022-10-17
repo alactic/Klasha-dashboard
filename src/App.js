@@ -12,11 +12,10 @@ import TransactionHistory from './pages/transactions/Transactions';
 function App() {
   const [sidebarToggle, setSideBarToggle] = useState(false);
   return (
-    <div>
       <Router>
        <TopNav setSideBarToggle={setSideBarToggle} sidebarToggle={sidebarToggle}/>
        <SideBar sidebarToggle={sidebarToggle}/>
-       <div className="router-container">
+       <section className="router-container">
           <div className="content" onClick={()=>setSideBarToggle(true)}>
             <Routes>
             <Route
@@ -30,10 +29,9 @@ function App() {
               />
             </Routes>
           </div>
-       </div>
+       </section>
        {/* <Dashboard/> */}
        </Router>
-    </div>
   );
 }
 

@@ -53,7 +53,6 @@ const Pagination = ({
       } else {
         setShowEllipis(true);
       }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentPage]);
 
   const showEllipsis = () => {

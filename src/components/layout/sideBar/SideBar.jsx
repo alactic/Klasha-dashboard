@@ -8,7 +8,7 @@ import { BalanceIcon, DashboardIcon, LogoIcon, PaymentIcon, TransactionIcon, Wir
 const SideBar = ({ sidebarToggle }) => {
   const location = useLocation()
   return (
-    <div
+    <aside
       className={`sidebar-container ${sidebarToggle && "hide-sidebar-mobile"}`}
     > 
     <div className="sidebar-content">   
@@ -34,7 +34,7 @@ const SideBar = ({ sidebarToggle }) => {
        <div className="hide-panel"><span className="icon"><ArrowLeftIcon/></span> Hide panel</div>
        </div>
     </div>
-    </div>
+    </aside>
   );
 };
 

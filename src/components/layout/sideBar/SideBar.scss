@@ -34,7 +34,8 @@
       text-decoration: none;
     }
     .icon {
-      margin: 0 11px -8px 0;
+      margin: 0 7px -8px 0;
+      width: 27px;
     }
   }
   .menu-item {
@@ -80,6 +81,12 @@
   .sidebar-container {
     top: 64px;
     width: 252px;
+    padding-bottom: 64px;
+    overflow: auto;
+    .sidebar-content {
+      overflow: auto;
+      margin-bottom: 64px;
+    }
   }
   .hide-sidebar-mobile {
     display: none;
