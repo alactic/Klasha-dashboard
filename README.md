@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Klasha Senior Frontend Engineer; Assessment using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Implementation of the dashboard and transaction history
+
+## Addition of mobile responsiveness
 
 ## Available Scripts
 
