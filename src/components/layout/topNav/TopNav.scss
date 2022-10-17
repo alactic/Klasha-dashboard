@@ -52,4 +52,14 @@
       }
     }
   }
+  @media screen and (max-width: 400px) {
+    .topnav-content {
+      .toggle {
+        margin-left: 22px;
+      }
+      .en {
+        margin-right: 22px;
+      }
+    }
+  }
 }
