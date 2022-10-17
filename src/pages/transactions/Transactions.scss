@@ -4,6 +4,7 @@
 .transactions-container {
   border: 1px solid $grey-100;
   border-radius: 8px;
+  @include customScroll;
   .overview {
     border: 1px solid $grey-100;
     padding: 16px 0 24px 16px;
@@ -11,16 +12,6 @@
   }
   .table-content {
     overflow: auto;
-  }
-  /* Handle */
-  .table-content::-webkit-scrollbar-thumb {
-    background: #f3f4f8;
-    border-radius: 5px;
-  }
-
-  /* Handle on hover */
-  .table-content::-webkit-scrollbar-thumb:hover {
-    background: #f3f4f8;
   }
   #table {
     border-collapse: collapse;
