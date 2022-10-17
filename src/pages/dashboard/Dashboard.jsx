@@ -47,7 +47,7 @@ const Dashboard = () =>{
                <span className="thirty-days">30 days</span>
                <span className="currency">USD <span className="icon"><ArrowDownIcon width="8px"/></span></span>
                <span className="email">Email <ArrowDownIcon/></span>
-               <span className="report"><span className="icon"><DownloadIcon/></span>Download report</span>
+               <span className="report"><span className="icon"><DownloadIcon/></span><span className="download">Download</span> report</span>
             </div>
             <div className="graph-content">
                  <div className="graph">

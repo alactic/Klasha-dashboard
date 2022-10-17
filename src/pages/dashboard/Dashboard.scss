@@ -183,10 +183,13 @@
       width: 100%;
     }
     .email {
-      width: 120px;
+      max-width: 120px;
     }
     .report {
       margin-left: 9px;
+    }
+    .download {
+      display: none;
     }
   }
 }
