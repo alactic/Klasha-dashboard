@@ -4,8 +4,8 @@ import "./Chart.scss";
 const Chart = () => {
 
     useEffect(() => {
-        if(new CanvasJS.Chart){
-            let chart = new CanvasJS.Chart("chartContainer", {
+        if(new window.CanvasJS.Chart){
+            let chart = new window.CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
                 title: {
                     text: ""
